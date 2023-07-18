@@ -21,3 +21,11 @@ now restart all the containers by attaching to this network
 - backend `docker run --network goals-network -p 80:80  --rm --name goals-backend goals-api`
 
 - frontend : `no need to add network bcs the ui code runs in browser and not in docker`
+
+### To start compose ( launch configs for docker containers ).
+
+- start `docker-compose up` to start in detached mode add `-d`
+
+- to stop all containers and network `docker-compose down` to delete volumes too use `-v` bcs bydefault the volumes are not deleted.
+
+to force images to rebuild on we need to run add `docker-compose -build` command.
