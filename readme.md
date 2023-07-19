@@ -29,3 +29,12 @@ now restart all the containers by attaching to this network
 - to stop all containers and network `docker-compose down` to delete volumes too use `-v` bcs bydefault the volumes are not deleted.
 
 to force images to rebuild on we need to run add `docker-compose -build` command.
+
+### Local setup from Docker
+
+here we see how to have a project running from docker without having node or any other tools in local
+
+To achive this :
+
+- add yet another docker file in teh root next to docker file
+- then run `docker compose run --rm npm init` || any other npm command ( I am using npm it can be yarn pnpm or anything)
