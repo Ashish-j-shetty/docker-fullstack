@@ -24,6 +24,8 @@ now restart all the containers by attaching to this network
 
 ### To start compose ( launch configs for docker containers ).
 
+(dont forget to build your app before compose)
+
 - start `docker-compose up` to start in detached mode add `-d`
 
 - to stop all containers and network `docker-compose down` to delete volumes too use `-v` bcs bydefault the volumes are not deleted.
